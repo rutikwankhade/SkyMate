@@ -1,0 +1,17 @@
+.title{margin:30px;}
+.container2{background-color:  #faf2f2;
+    padding:30px;}
+.input-card{max-width:400px;}
+input{border:none;
+border-radius:5px;
+padding:7px;
+}
+
+.sm-card{background-color: #ffffff;
+border-radius:8px;
+margin:30px;}
+
+.btn-search{
+    color:#ffffff;
+    background-color:#6a097d;
+}
