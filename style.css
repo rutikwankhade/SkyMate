@@ -11,8 +11,7 @@ body{background-color: #f2f2f2;}
     }
 
 .weather-card{
-    width:auto;
-    height:auto;
+   
     margin-top:20px;
     margin:auto;
 }
@@ -34,6 +33,7 @@ input{
     padding:7px;
     border-radius:5px;
     border:none;
+    margin:auto;
 }
 
 .weather-data{
