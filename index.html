@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icons/thunder.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>SkyMate</title>
 </head>
 <body>
@@ -15,14 +17,14 @@
 
     <div class="container">
       <div class="container-flex">
-
+        
          <div class="weather-card">
-           <div class="inline-flex mr-2">
-             <input type="text" placeholder="Enter City" class="m-1 city-input pl-4">
-             <button type="button" class=" btn-search m-1">Search</button>
-           </div>
+            <div class="form-inline mr-2">
+                <input type="text" placeholder="Enter City" class="m-1 city-input pl-4">
+                <button type="button" class=" btn-search m-1">Search</button>
+              </div>
     
-          <div class="lg-card m-2">
+          <div class="lg-card m-2" data-aos="fade-up">
             <div d-flex flex-column>
                <img src="icons/011-cloud.png" class="weather-icon">
                <h4 class="weather">It's a lovely day</h4>
@@ -38,7 +40,7 @@
         </div>
 
         <div class="weather-data">
-          <div class="all-cards">
+          <div class="all-cards " data-aos="fade-up">
  
             <div class="sm-card">
               <img src="icons/sun.png"class="icon">
@@ -78,4 +80,6 @@
 
 </body>
 <script src="app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
 </html>
