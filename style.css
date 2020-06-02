@@ -25,8 +25,7 @@ input{
     border:none;
     border-radius:5px;
     padding:7px;
-    width:auto;
-}
+    }
 .btn-search{
     color:#ffffff;
     background-color:#4d4d4d;
@@ -42,6 +41,7 @@ input{
     align-items: center;
     width:auto;
     padding:auto;
+    height:auto;
     
    }
 .lg-card{
