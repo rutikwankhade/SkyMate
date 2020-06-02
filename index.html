@@ -6,80 +6,76 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icons/thunder.png">
-    <title>Wrapp</title>
+    <title>SkyMate</title>
 </head>
 <body>
+    <nav class="navbar navbar-dark bg-primary">
+        <h3 class="title">⚡ SkyMate</h3>
+    </nav>
 
     <div class="container">
-        <h3 class="title">⚡ Wrapp</h3>
+      <div class="container-flex">
 
-<div class="container-flex">
+         <div class="weather-card">
+           <div class="inline-flex mr-2">
+             <input type="text" placeholder="Enter City" class="m-1 city-input pl-4">
+             <button type="button" class=" btn-search m-1">Search</button>
+           </div>
+    
+          <div class="lg-card m-2">
+            <div d-flex flex-column>
+               <img src="icons/011-cloud.png" class="weather-icon">
+               <h4 class="weather">It's a lovely day</h4>
+               <h2 class="temp">0</h2>
+               <p>Celsius</p>
 
-<div class="input-card">
-    <div class="inline-flex">
-      <input type="text" placeholder="Enter City" class="m-1 city-input pl-4">
-      <button type="button" class="btn btn-search m-1">Search</button>
-   </div>
-    <div class="lg-card m-2">
-<div d-flex flex-column>
-    <img src="icons/011-cloud.png" class="icon2">
-    <h4 class="weather">Its a good day !</h4>
-    <h2 class="temp">0</h2>
-    <p>Celsius</p>
+               <div class="mb-2 m2">
+                 <p class="float-left place">Akola</p>
+                 <p class="float-right date">1 jun 2020</p>
+               </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="mb-2 m2">
-        <p class="float-left place">Akola</p>
-        <p class="float-right date">1 jun 2020</p>
+        <div class="weather-data">
+          <div class="all-cards">
+ 
+            <div class="sm-card">
+              <img src="icons/sun.png"class="icon">
+              <p>Max</p>
+              <h5 class="max-temp value"></h5>
+            </div>
+
+            <div class="sm-card ">
+              <img src="icons/climate.png"class="icon">
+              <p>Min</p>
+              <h5 class="min-temp value"></h5></strong>
+            </div>
+
+            <div class="sm-card ">
+              <img src="icons/water.png"class="icon center">
+              <p>Humidity</p>
+              <h5 class="humidity value"></h5>
+            </div>
+
+            <div class="sm-card">
+              <img src="icons/017-wind.png"class="icon">
+              <p>Wind Speed</p>
+              <h5 class="wind-speed value"></h5>
+            </div> 
+
+            <div class="sm-card">
+              <img src="icons/indicator.png"class="icon">
+              <p>Pressure</p>
+              <h5 class="pressure value"></h5>
+            </div> 
+          </div>
+        </div>
+
+      </div>
     </div>
-</div>
-
-    </div>
-</div>
-
-<div class="weather-data">
-<div class="all-cards">
-
-<div class="sm-card">
-    <img src="icons/sun.png"class="icon">
-    <p>Max</p>
-    <h5 class="max-temp value"></h5>
-</div>
-
-<div class="sm-card ">
-    <img src="icons/climate.png"class="icon">
-    <p>Min</p>
-    <h5 class="min-temp value"></h5></strong>
-</div>
-
-<div class="sm-card ">
-    <img src="icons/water.png"class="icon center">
-    <p>Humidity</p>
-    <h5 class="humidity value"></h5>
-</div>
-
-<div class="sm-card">
-    <img src="icons/017-wind.png"class="icon">
-    <p>Wind Speed</p>
-    <h5 class="wind-speed value"></h5>
-</div> 
-
-<div class="sm-card">
-    <img src="icons/indicator.png"class="icon">
-    <p>Pressure</p>
-    <h5 class="pressure value"></h5>
-</div> 
- </div>
-</div>
-
-</div>
-
-    </div>
-
-
+    <footer class="bottom">Made with &#10084; By <a href="https://rutikw.now.sh">Rutik Wankhade</a></footer>
 
 </body>
-
-
-
 <script src="app.js"></script>
 </html>
