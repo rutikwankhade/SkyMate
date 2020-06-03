@@ -39,11 +39,11 @@ function displayWeather(){
      //display weather
         document.querySelector('.temp').textContent=temp;
         document.querySelector('.weather').textContent=weather;       
-        document.querySelector('.wind-speed').textContent=windSpeed;
+        document.querySelector('.wind-speed').textContent=windSpeed + " kph";
         document.querySelector('.max-temp').textContent=maxTemp;
         document.querySelector('.min-temp').textContent=minTemp ;
-        document.querySelector('.humidity').textContent=humidity;
-        document.querySelector('.pressure').textContent=pressure;
+        document.querySelector('.humidity').textContent=humidity + " %";
+        document.querySelector('.pressure').textContent=pressure + " Pa";
         document.querySelector('.place').textContent=place;
         
      //change icon for different weathers
