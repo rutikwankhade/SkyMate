@@ -67,3 +67,10 @@ function displayWeather(){
 }
 let weatherIcon=document.querySelector('.weather-icon');
 
+//add today's date
+let date=document.querySelector('.date');
+let today=new Date();
+const options={year: 'numeric', month: 'long', day: 'numeric' }
+date.textContent=today.toLocaleDateString('en-US',options);
+
+
