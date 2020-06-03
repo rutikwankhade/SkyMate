@@ -4,17 +4,19 @@ let input=document.querySelector('.city-input');
 let btn=document.querySelector('.btn-search');
 btn.addEventListener('click', ()=>{
     displayWeather();
-    // updateUI();
+    
 })
 
+document.addEventListener('keypress',(event)=>{
+    if(event.keyCode===13){
+        displayWeather();
+    }
+})
 
-
-
-
-
- function displayWeather(){
+function displayWeather(){
     let place = input.value;
     console.log(place);
+
     let api="https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/find?q="+ place +"&units=metric&appid=850cac4c51c8a61b959dfe0593e8cb07";
     console.log(api);
 
@@ -25,6 +27,7 @@ btn.addEventListener('click', ()=>{
 })
     .then(data=>{
         console.log(data);
+     //access data from the fetched object 
         let temp=data.list[0].main.feels_like;
         let weather=data.list[0].weather[0].description;
         let windSpeed=data.list[0].wind.speed;
@@ -33,35 +36,34 @@ btn.addEventListener('click', ()=>{
         let humidity=data.list[0].main.humidity;
         let pressure=data.list[0].main.pressure;
 
-
-        tempText.textContent=temp;
-        weatherText.textContent=weather;       
-        windspeedText.textContent=windSpeed;
-        maxTempText.textContent=maxTemp;
-
-        minTempText.textContent=minTemp;
-        humidityText.textContent=humidity;
-        pressureText.textContent=pressure;
-
+     //display weather
+        document.querySelector('.temp').textContent=temp;
+        document.querySelector('.weather').textContent=weather;       
+        document.querySelector('.wind-speed').textContent=windSpeed;
+        document.querySelector('.max-temp').textContent=maxTemp;
+        document.querySelector('.min-temp').textContent=minTemp ;
+        document.querySelector('.humidity').textContent=humidity;
+        document.querySelector('.pressure').textContent=pressure;
+        document.querySelector('.place').textContent=place;
+        
+     //change icon for different weathers
+        if( weather=='moderate rain')
+        weatherIcon.setAttribute('src','icons/moderate.png');
+        else if(weather=='haze')
+        weatherIcon.setAttribute('src','icons/haze.png');
+        else if(weather=='scattered clouds')
+        weatherIcon.setAttribute('src','icons/scattered.png');
+        else if(weather=='light rain')
+        weatherIcon.setAttribute('src','icons/light.png');
+        else if(weather=='overcast clouds')
+        weatherIcon.setAttribute('src','icons/overcast.png');
 
 
     })
-    .catch(error=>console.log(error))
+    .catch(error=>{
+        console.log(error);
+        alert('please enter a valid place.');
+})
 }
+let weatherIcon=document.querySelector('.weather-icon');
 
-let tempText = document.querySelector('.temp');
-
-let weatherText = document.querySelector('.weather');
-let windspeedText = document.querySelector('.wind-speed');
-let maxTempText = document.querySelector('.max-temp');
-let minTempText = document.querySelector('.min-temp');
-let humidityText = document.querySelector('.humidity');
-let pressureText = document.querySelector('.pressure');
-
-
-
-
-
-
-// function updateUI(weather){
-// }

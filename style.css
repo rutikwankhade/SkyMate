@@ -11,7 +11,7 @@ body{background-color: #f2f2f2;}
     }
 
 .weather-card{
-   width:auto;
+    width:auto;
     margin-top:20px;
     margin:auto;
 }
@@ -21,6 +21,9 @@ body{background-color: #f2f2f2;}
     width:100px;
     margin: auto;
 }
+.weather{width:200px;
+    margin:auto;
+text-align: center;}
 input{
     border:none;
     border-radius:5px;
@@ -90,6 +93,8 @@ p{
     margin:0px;
     padding:0px;
 }
+.tagline{margin:30px;
+text-align: center;}
 
 footer{
     height:40px;
