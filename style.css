@@ -105,8 +105,7 @@ footer{
     font-size: 14px;
 }
 
-
-/* media queries */
+ /*media queries */
 
 @media screen 
   and (min-device-width: 1200px) {
