@@ -12,7 +12,7 @@ document.addEventListener('keypress',(event)=>{
         displayWeather();
     }
 })
-
+//spinner
 const renderLoader = () => {
     let loader = `
     <div class="d-flex justify-content-center m-2">
